@@ -1,0 +1,42 @@
+stages:
+  validateChangelog:
+  # Run Checks on Repo Changelog
+    actions:
+    - type: liquibase
+      command: checks run
+      cmdArgs: {}
+  # Run validate on Repo Changelog
+    - type: liquibase
+      command: validate
+      cmdArgs: {}
+  # inspectDatabase:
+  # # Clone liquibase data repo
+  #   actions:
+  #   - type: liquibase
+  #     command: tag
+  #     cmdArgs: {tag: "codebuild-${CODEBUILD_BUILD_NUMBER}"}
+  #   - type: liquibase
+  #     command: status
+  #     cmdArgs: {verbose: true}
+  # liquibaseUpdate:
+  # # Run Update on Latest Repo State
+  #   actions:
+  #   - type: liquibase
+  #     command: updateSql
+  #     cmdArgs: {}
+  # # Run Update on Latest Repo State
+  #   - type: liquibase
+  #     command: update
+  #     cmdArgs: {}
+  # databaseChecks:
+  # # Run database checks on post update state
+  #   actions:
+  #   - type: liquibase
+  #     command: checks run
+  #     cmdArgs: {checks-scope: "database"}
+      
+  # endStage:
+  #   actions:
+  #   - type: liquibase
+  #     command: history
+  #     cmdArgs: {}
