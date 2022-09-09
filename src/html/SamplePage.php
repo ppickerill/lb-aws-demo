@@ -2,7 +2,7 @@
 <?php include "../inc/dbinfo.inc"; ?>
 <html>
 <body>
-<h1>Sample Page - Brought To You By AWS CodePipeline & CodeDeploy</h1>
+<h1>Sample Page - Brought To You By AWS CodePipeline & Liquibase</h1>
 <?php
 
   /* Connect to MySQL and select the database. */
