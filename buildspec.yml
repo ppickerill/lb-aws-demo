@@ -17,7 +17,6 @@ phases:
       
   build:
     commands:
-      - ping $RDS_HOSTNAME
       - liquibase --defaultsFile=liquibase.properties flow --flow-file=flows/build-flow.yaml
       - zip lb-aws-demo-build-$CODEBUILD_BUILD_NUMBER.zip $CODEBUILD_SRC_DIR/src
       
