@@ -5,6 +5,7 @@ env:
     LIQUIBASE_COMMAND_USERNAME: lbuser
     LIQUIBASE_COMMAND_PASSWORD: 1AmGr00t
     LIQUIBASE_COMMAND_URL: jdbc:mysql://lb-aws-demo-db-test.cft5wkyp4znj.us-east-1.rds.amazonaws.com:3306/sample
+  secrets:
     LIQUIBASE_PRO_LICENSE_KEY: LIQUIBASE-PRO-KEY:KEY
 
 phases:
