@@ -3,4 +3,5 @@ os: linux
 files:
   - source: /src/html/SamplePage.php
     destination: /var/www/html/
+    overwrite: true
 
