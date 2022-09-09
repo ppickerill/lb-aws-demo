@@ -1,10 +1,10 @@
 version: 0.2
     
 env:
-  secrets-manager:
-    LIQUIBASE_COMMAND_USERNAME: LB-AWS-DEMO:username
-    LIQUIBASE_COMMAND_PASSWORD: LB-AWS-DEMO:password
-    RDS_HOSTNAME: LB-AWS-DEMO:host
+  variables:
+    LIQUIBASE_COMMAND_USERNAME: lbuser
+    LIQUIBASE_COMMAND_PASSWORD: 1AmGr00t
+    LIQUIBASE_COMMAND_URL: jdbc:mysql://lb-aws-demo-db-test.cft5wkyp4znj.us-east-1.rds.amazonaws.com:3306/sample
     LIQUIBASE_PRO_LICENSE_KEY: LIQUIBASE-PRO-KEY:KEY
 
 phases:
