@@ -12,10 +12,7 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-    commands:
-      - echo "Installing dependencies..."
-      - apt-get update -y
-      - apt-get install -y zip
+
   pre_build:
     commands:
       - ls $CODEBUILD_SRC_DIR
@@ -23,12 +20,12 @@ phases:
   build:
     commands:
       - liquibase --defaultsFile=liquibase.properties flow --flow-file=flows/build-flow.yaml
-      - zip lb-aws-demo-build-$CODEBUILD_BUILD_NUMBER.zip $CODEBUILD_SRC_DIR/src
       
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - lb-aws-demo-build-$CODEBUILD_BUILD_NUMBER.zip
+    - '**/*'
+  base-directory: 'src'
 
