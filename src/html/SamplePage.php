@@ -38,8 +38,8 @@
     $employee_address = htmlentities($_POST['ADDRESS']);
     $employee_fav_casserole = htmlentities($_POST['FAV_CASSEROLE']);
 
-    if (strlen($employee_name) || strlen($employee_address) || strlen($fav_casserole)) {
-      AddEmployee($connection, $employee_name, $employee_address, $fav_casserole);
+    if (strlen($employee_name) || strlen($employee_address) || strlen($employee_fav_casserole)) {
+      AddEmployee($connection, $employee_name, $employee_address, $employee_fav_casserole);
     }
     ?>
 
@@ -87,7 +87,7 @@
         "<td>", $query_data[1], "</td>",
         "<td>", $query_data[2], "</td>",
         "<td>", $query_data[3], "</td>";
-        
+
         echo "</tr>";
       }
       ?>
