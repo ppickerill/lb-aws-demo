@@ -120,13 +120,7 @@ function AddEmployee($connection, $name, $address)
 function VerifyEmployeesTable($connection, $dbName)
 {
   if (!TableExists("EMPLOYEES", $connection, $dbName)) {
-    $query = "CREATE TABLE EMPLOYEES (
-         ID int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-         NAME VARCHAR(45),
-         ADDRESS VARCHAR(90)
-       )";
-
-    if (!mysqli_query($connection, $query)) echo ("<p>Error creating table.</p>");
+    echo "<h1> WHERE'S DATABASE?  IS THERE ANYONE IN THE WORLD THAT CAN HELP US?";
   }
 }
 
