@@ -120,7 +120,7 @@ function AddEmployee($connection, $name, $address)
 function VerifyEmployeesTable($connection, $dbName)
 {
   if (!TableExists("EMPLOYEES", $connection, $dbName)) {
-    echo "<h1> WHERE'S DATABASE?  IS THERE ANYONE IN THE WORLD THAT CAN HELP US?";
+    echo "<h2> WHERE'S DATABASE?  IS THERE ANYONE IN THE WORLD THAT CAN HELP US?</h2>";
   }
 }
 

@@ -57,6 +57,14 @@ blockquote p {
     letter-spacing: .1em;
 }
 
+#centerColumn h2 {
+    color: #FF1744;
+    margin: 0 0 -.5em 0;
+    padding: .5em 0 0 1em;
+    font-size: 2em;
+    letter-spacing: .1em;
+}
+
 #header {
     color: #ffffff;
     margin: -1em -1em 0 -1em;
