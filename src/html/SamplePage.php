@@ -20,7 +20,7 @@
       <li><a href-"#">Contact</a></li>
     </ul>
   </div>
-  <h1>Sample Page - Brought To You By AWS CodePipeline & Liquibase</h1>
+  <h2>Brought To You By AWS CodePipeline & Liquibase</h2>
   <?php
 
     /* Connect to MySQL and select the database. */
