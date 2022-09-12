@@ -5,121 +5,109 @@ AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
 *******************************************************/
 
 body {
-margin:3em;
-padding:0;
-height:100%;
-background-color:#ffffff;
-color:#283593;  
-text-align:center;
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.5;
+    margin: 3em;
+    padding: 0;
+    height: 100%;
+    background-color: #ffffff;
+    color: #283593;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 a {
-color:#2981e4;
-text-decoration:underline;
+    color: #2981e4;
+    text-decoration: underline;
 }
 
 a:hover {
-color:#eeeeee;
-text-decoration:none;
+    color: #eeeeee;
+    text-decoration: none;
 }
 
 blockquote {
-margin:1em;
-padding:.5em;
-background-color:#eeeeee;
-border-top:1px solid #cccccc;
-border-bottom:1px solid #cccccc;
+    margin: 1em;
+    padding: .5em;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 
 blockquote p {
-margin:.2em;
+    margin: .2em;
 }
 
-#centerColumn { 	
-margin:0 auto;
-padding:1em;
-width:66%;
-text-align:left;
-vertical-align: middle;	
-background-color:#BBDEFB;
-border:1px solid #283593;
+#centerColumn {
+    margin: 0 auto;
+    padding: 1em;
+    width: 66%;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #BBDEFB;
+    border: 1px solid #283593;
 }
 
-#centerColumn h2 {
-margin:0 0 -.5em 0;
-padding:.75em 0 0 0;
-font-size:1em;
-letter-spacing:.1em;
+#centerColumn h1 {
+    color: #283593;
+    margin: 0 0 -.5em 0;
+    padding: 1em;
+    font-size: 1em;
+    letter-spacing: .1em;
 }
 
 #header {
-color:#ffffff;
-margin:-1em -1em 0 -1em;
-padding:0 0 0 0;
-height:5em;
-background-color:#2962ff;
+    color: #ffffff;
+    margin: -1em -1em 0 -1em;
+    padding: 0 0 0 0;
+    height: 5em;
+    background-color: #2962ff;
 }
 
 #header h1 {
-color:#ffffff;
-margin:0 0 -.6em 0;
-padding:.5em 0 0 1em;
-font-size:1.5em;
-letter-spacing:.1em;
+    color: #ffffff;
+    margin: 0 0 -.6em 0;
+    padding: .5em 0 0 1em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
 }
 
 #header h2 {
-color:#ffffff;
-margin:0 0 0 0; 
-padding:1em 0 0 1.75em;
-font-size:.9em;
-font-weight:300;
-letter-spacing:.1em;
+    color: #ffffff;
+    margin: 0 0 0 0;
+    padding: 1em 0 0 1.75em;
+    font-size: .9em;
+    font-weight: 300;
+    letter-spacing: .1em;
 }
 
 #nav {
-margin:0 0 1em 0;
-padding:.4em 0 0 0;
+    margin: 0 0 1em 0;
+    padding: .4em 0 0 0;
 }
 
 #nav ul {
-margin:0;
-padding:0;
-list-style:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 #nav li {
-margin:0;
-padding:.25em;
-display:inline;
+    margin: 0;
+    padding: .25em;
+    display: inline;
 }
 
 #footer {
-position:relative;
-bottom:0;
-margin:5em 0 0 0;
-padding:0;
-height:4em;
-line-height:4em;
-text-align:center;
-font-size:.7em;
-background-color:#BBDEFB;
-border-top:1px solid #283593;
+    position: relative;
+    bottom: 0;
+    margin: 5em 0 0 0;
+    padding: 0;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    font-size: .7em;
+    background-color: #BBDEFB;
+    border-top: 1px solid #283593;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
