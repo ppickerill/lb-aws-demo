@@ -1,6 +1,11 @@
 
 <?php include "../inc/dbinfo.inc"; ?>
 <html>
+<head>
+  <title>Fixed box layout</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
 <body>
 <h1>Sample Page - Brought To You By AWS CodePipeline & Liquibase</h1>
 <?php
