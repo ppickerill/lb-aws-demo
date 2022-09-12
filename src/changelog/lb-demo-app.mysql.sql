@@ -7,9 +7,6 @@ CREATE TABLE `EMPLOYEES` (
   PRIMARY KEY (`ID`)
 );
 
--- changeset ppickerill:add-phone-number-to-employees
-ALTER TABLE sample.EMPLOYEES ADD PHONE_NUMBER varchar(100) NULL;
-
 -- changeset ppickerill:add-casserole-to-employees
 ALTER TABLE sample.EMPLOYEES ADD FAV_CASSEROLE varchar(45) NOT NULL DEFAULT "SPACE AGE EXPERIMENTAL CASSEROLE!";
 
