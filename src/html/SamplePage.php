@@ -29,7 +29,23 @@
   }
 ?>
 
-<!-- Input form -->
+<div id="centerColumn">
+  <div id="header">
+    <h1>site title</h1>
+    <h2>fixed box layout</h2>
+  </div>
+  <!--//end #headern//-->
+  <div id="nav">
+    <ul>
+      <li><a href-"#">Home</a></li>
+      <li><a href-"#">About</a></li>
+      <li><a href-"#">Gallery</a></li>
+      <li><a href-"#">Contact</a></li>
+    </ul>
+  </div>
+  <!--//end #nav//-->
+  <h2>centerColumn</h2>
+  <!-- Input form -->
 <form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
   <table border="0">
     <tr>
@@ -81,6 +97,9 @@ while($query_data = mysqli_fetch_row($result)) {
 
 ?>
 
+  <div id="footer"> <a target="_blank" href="http://validator.w3.org/" title="W3C HTML Validation">XHTML</a> | <a target="_blank" href="http://jigsaw.w3.org/css-validator/validator-uri.html" title="W3C CSS Validation">CSS</a> | <a target="_blank" href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines">WCAG</a> | <a target="_blank" rel="nofollow" href="http://www.csstinderbox.com">The CSS Tinderbox</a> </div>
+  <!--//end #footer//-->
+</div>
 </body>
 </html>
 
