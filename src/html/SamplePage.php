@@ -36,9 +36,10 @@
     /* If input fields are populated, add a row to the EMPLOYEES table. */
     $employee_name = htmlentities($_POST['NAME']);
     $employee_address = htmlentities($_POST['ADDRESS']);
+    $employee_fav_casserole = htmlentities($_POST['FAV_CASSEROLE']);
 
-    if (strlen($employee_name) || strlen($employee_address)) {
-      AddEmployee($connection, $employee_name, $employee_address);
+    if (strlen($employee_name) || strlen($employee_address) || strlen($fav_casserole)) {
+      AddEmployee($connection, $employee_name, $employee_address, $fav_casserole);
     }
     ?>
 
@@ -48,6 +49,7 @@
         <tr>
           <td>NAME</td>
           <td>ADDRESS</td>
+          <td>FAVORITE CASSEROLE</td>
         </tr>
         <tr>
           <td>
@@ -55,6 +57,9 @@
           </td>
           <td>
             <input type="text" name="ADDRESS" maxlength="90" size="60" />
+          </td>
+          <td>
+            <input type="text" name="FAV_CASSEROLE" maxlength="45" size="30" />
           </td>
           <td>
             <input type="submit" value="Add Data" />
@@ -69,6 +74,7 @@
         <td>ID</td>
         <td>NAME</td>
         <td>ADDRESS</td>
+        <td>FAVORITE CASSEROLE</td>
       </tr>
 
       <?php
@@ -80,6 +86,7 @@
         echo "<td>", $query_data[0], "</td>",
         "<td>", $query_data[1], "</td>",
         "<td>", $query_data[2], "</td>";
+        "<td>", $query_data[3], "</td>";
         echo "</tr>";
       }
       ?>
@@ -106,12 +113,13 @@
 <?php
 
 /* Add an employee to the table. */
-function AddEmployee($connection, $name, $address)
+function AddEmployee($connection, $name, $address, $fav_casserole)
 {
   $n = mysqli_real_escape_string($connection, $name);
   $a = mysqli_real_escape_string($connection, $address);
+  $c = mysqli_real_escape_string($connection, $fav_casserole);
 
-  $query = "INSERT INTO EMPLOYEES (NAME, ADDRESS) VALUES ('$n', '$a');";
+  $query = "INSERT INTO EMPLOYEES (NAME, ADDRESS, FAV_CASSEROLE) VALUES ('$n', '$a', '$c');";
 
   if (!mysqli_query($connection, $query)) echo ("<p>Error adding employee data.</p>");
 }

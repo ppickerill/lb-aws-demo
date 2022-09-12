@@ -9,3 +9,7 @@ CREATE TABLE `EMPLOYEES` (
 
 -- changeset ppickerill:add-phone-number-to-employees
 ALTER TABLE sample.EMPLOYEES ADD PHONE_NUMBER varchar(100) NULL;
+
+-- changeset ppickerill:add-casserole-to-employees
+ALTER TABLE sample.EMPLOYEES ADD FAV_CASSEROLE varchar(45) DEFAULT "SPACE AGE EXPERIMENTAL CASSEROLE!" NULL;
+
