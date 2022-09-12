@@ -7,6 +7,19 @@
 </head>
 <body>
 <div id="centerColumn">
+<div id="header">
+    <h1>site title</h1>
+    <h2>fixed box layout</h2>
+  </div>
+  <!--//end #headern//-->
+  <div id="nav">
+    <ul>
+      <li><a href-"#">Home</a></li>
+      <li><a href-"#">About</a></li>
+      <li><a href-"#">Gallery</a></li>
+      <li><a href-"#">Contact</a></li>
+    </ul>
+  </div>
   <h1>Sample Page - Brought To You By AWS CodePipeline & Liquibase</h1>
   <?php
 
