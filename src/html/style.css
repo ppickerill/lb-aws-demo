@@ -6,7 +6,7 @@ AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
 
 body {
     margin: 3em;
-    padding: 0;
+    padding: .5em 0 0 1em;
     height: 100%;
     background-color: #ffffff;
     color: #283593;
@@ -61,7 +61,7 @@ blockquote p {
     color: #FF1744;
     margin: 0 0 -.5em 0;
     padding: .5em 0 0 1em;
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: .1em;
 }
 
