@@ -94,6 +94,9 @@
 
   ?>
   </div>
+  <div id="footer">
+    <h2> Brought to you by AWS CodePipeline & Liquibase </h2>
+</div>
 </body>
 </html>
 
