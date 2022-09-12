@@ -8,8 +8,8 @@
 <body>
 <div id="centerColumn">
 <div id="header">
-    <h1>site title</h1>
-    <h2>fixed box layout</h2>
+    <h1>Liquibasers of the World</h1>
+    <h2>Unite & Take Over</h2>
   </div>
   <!--//end #headern//-->
   <div id="nav">
