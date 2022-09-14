@@ -6,6 +6,3 @@ CREATE TABLE `EMPLOYEES` (
   `ADDRESS` varchar(90) DEFAULT NULL,
   PRIMARY KEY (`ID`)
 );
-
--- changeset ppickerill:add-phone-number-to-employees
-ALTER TABLE sample.EMPLOYEES ADD PHONE_NUMBER varchar(100) NULL;
