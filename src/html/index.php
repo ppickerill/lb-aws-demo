@@ -36,10 +36,12 @@
     /* If input fields are populated, add a row to the EMPLOYEES table. */
     $employee_name = htmlentities($_POST['NAME']);
     $employee_address = htmlentities($_POST['ADDRESS']);
+
     $employee_fav_casserole = htmlentities($_POST['FAV_CASSEROLE']);
 
     if (strlen($employee_name) || strlen($employee_address) || strlen($employee_fav_casserole)) {
       AddEmployee($connection, $employee_name, $employee_address, $employee_fav_casserole);
+
     }
     ?>
 
@@ -87,7 +89,7 @@
         "<td>", $query_data[1], "</td>",
         "<td>", $query_data[2], "</td>",
         "<td>", $query_data[3], "</td>";
-
+        "<td>", $query_data[2], "</td>";
         echo "</tr>";
       }
       ?>

@@ -9,4 +9,3 @@ CREATE TABLE `EMPLOYEES` (
 
 -- changeset ppickerill:add-casserole-to-employees
 ALTER TABLE sample.EMPLOYEES ADD FAV_CASSEROLE varchar(45) NOT NULL DEFAULT "SPACE AGE EXPERIMENTAL CASSEROLE!";
-
